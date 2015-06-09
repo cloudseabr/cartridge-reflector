@@ -16,10 +16,10 @@ both a new manifest AND a new zip file (or host the zip file somewhere else).
 This would suck.  Fortunately.... the Cartridge Reflector can read your manifest
 and automatically provide a Source-Url if you upload to GitHub!
 
-3.  Craft a URL against my cart reflector http://cartreflect-claytondev.rhcloud.com/
+3.  Craft a URL against my cart reflector http://reflector.cloudsea.com.br/
 (or stand up your own following the steps below)
  
-        http://cartreflect-claytondev.rhcloud.com/reflect?github=<X>
+        http://reflector.cloudsea.com.br/reflect?github=<X>
         
     where <X> is the name of your user and repository, e.g. "smarterclayton/openshift-go-cart".
     If you hit the URL you'll see that the reflector generates a Source-Url that points
@@ -27,9 +27,9 @@ and automatically provide a Source-Url if you upload to GitHub!
     
 4.  Pass that URL to rhc create-app to create a downloadable cart:
 
-        rhc create-app foo http://cartreflect-claytondev.rhcloud.com/reflect?github=smarterclayton/openshift-go-cart
+        rhc create-app foo http://reflector.cloudsea.com.br/reflect?github=smarterclayton/openshift-go-cart
 
-See the [root page of the reflector](http://cartreflect-claytondev.rhcloud.com/) for more documentation. It also supports relative URLs and GitHub commits (pass '&commit=<sha1>' when using the github param).
+See the [root page of the reflector](http://reflector.cloudsea.com.br/) for more documentation. It also supports relative URLs and GitHub commits (pass '&commit=<sha1>' when using the github param).
 
 Setting up your own reflector
 -----------------------------
